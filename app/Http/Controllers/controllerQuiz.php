@@ -24,10 +24,10 @@ class controllerQuiz extends Controller
         return view('quest1');
     }
 
-    public function dadosQuest1(Request $resquet){
+    public function dadosQuest1(Request $request){
         $resposta = $request->input('quest');
         session(['resposta1' => $resposta]);
-        if(strcmp($resposta, $this->gabarito['quest1'])){
+        if(strcmp($resposta, $this->gabarito['quest1'])==0){
             $acertos = session('acertos');
             $acertos++;
             session(['acertos' => $acertos]);
@@ -38,10 +38,10 @@ class controllerQuiz extends Controller
         return view('quest2');
     }
 
-    public function dadosQuest2(Request $resquet){
+    public function dadosQuest2(Request $request){
         $resposta = $request->input('quest');
         session(['resposta2' => $resposta]);
-        if(strcmp($resposta, $this->gabarito['quest2'])){
+        if(strcmp($resposta, $this->gabarito['quest2'])==0){
             $acertos = session('acertos');
             $acertos++;
             session(['acertos' => $acertos]);
@@ -52,10 +52,10 @@ class controllerQuiz extends Controller
         return view('quest3');
     }
 
-    public function dadosQuest3(Request $resquet){
+    public function dadosQuest3(Request $request){
         $resposta = $request->input('quest');
         session(['resposta3' => $resposta]);
-        if(strcmp($resposta, $this->gabarito['quest3'])){
+        if(strcmp($resposta, $this->gabarito['quest3'])==0){
             $acertos = session('acertos');
             $acertos++;
             session(['acertos' => $acertos]);
@@ -66,10 +66,10 @@ class controllerQuiz extends Controller
         return view('quest4');
     }
 
-    public function dadosQuest4(Request $resquet){
+    public function dadosQuest4(Request $request){
         $resposta = $request->input('quest');
         session(['resposta4' => $resposta]);
-        if(strcmp($resposta, $this->gabarito['quest4'])){
+        if(strcmp($resposta, $this->gabarito['quest4'])==0){
             $acertos = session('acertos');
             $acertos++;
             session(['acertos' => $acertos]);
@@ -80,10 +80,10 @@ class controllerQuiz extends Controller
         return view('quest5');
     }
 
-    public function dadosQuest5(Request $resquet){
+    public function dadosQuest5(Request $request){
         $resposta = $request->input('quest');
         session(['resposta5' => $resposta]);
-        if(strcmp($resposta, $this->gabarito['quest5'])){
+        if(strcmp($resposta, $this->gabarito['quest5'])==0){
             $acertos = session('acertos');
             $acertos++;
             session(['acertos' => $acertos]);
@@ -94,10 +94,10 @@ class controllerQuiz extends Controller
         return view('quest6');
     }
 
-    public function dadosQuest6(Request $resquet){
+    public function dadosQuest6(Request $request){
         $resposta = $request->input('quest');
         session(['resposta6' => $resposta]);
-        if(strcmp($resposta, $this->gabarito['quest6'])){
+        if(strcmp($resposta, $this->gabarito['quest6'])==0){
             $acertos = session('acertos');
             $acertos++;
             session(['acertos' => $acertos]);
@@ -108,10 +108,10 @@ class controllerQuiz extends Controller
         return view('quest7');
     }
 
-    public function dadosQuest7(Request $resquet){
+    public function dadosQuest7(Request $request){
         $resposta = $request->input('quest');
         session(['resposta7' => $resposta]);
-        if(strcmp($resposta, $this->gabarito['quest7'])){
+        if(strcmp($resposta, $this->gabarito['quest7'])==0){
             $acertos = session('acertos');
             $acertos++;
             session(['acertos' => $acertos]);
@@ -122,10 +122,10 @@ class controllerQuiz extends Controller
         return view('quest8');
     }
 
-    public function dadosQuest8(Request $resquet){
+    public function dadosQuest8(Request $request){
         $resposta = $request->input('quest');
         session(['resposta8' => $resposta]);
-        if(strcmp($resposta, $this->gabarito['quest8'])){
+        if(strcmp($resposta, $this->gabarito['quest8']) == 0){
             $acertos = session('acertos');
             $acertos++;
             session(['acertos' => $acertos]);

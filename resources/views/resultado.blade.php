@@ -1,6 +1,7 @@
 @extends('layout')
 @section('content')
     <div class="py-5">
+        <h2><strong>Resultado</strong></h2>
         <table class="table">
             <thead class="thead-dark">
                 <tr>
@@ -10,11 +11,11 @@
                 </tr>
             </thead>
             <tbody>
-                @for($k=1; $k<=8; $k++)
+                @for($k=0; $k<=7; $k++)
                 <tr>
-                    <th scope="row">{{$k}}</th>
-                    <td>{{$dados['resposta'][$k]}}</td>
-                    <td>{{$dados['status'][$k]}}</td>
+                    <th scope="row">{{$k+1}}</th>
+                    <td>{{$dados[$k]['resposta']}}</td>
+                    <td>{{$dados[$k]['status']}}</td>
                 </tr>
                 @endfor
             </tbody>
