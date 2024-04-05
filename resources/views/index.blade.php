@@ -3,7 +3,7 @@
     <div class="jumbotron">
         <div class="row">
             <div class="col-6 py-4">
-                <img src="{{asset('storage/image/ben10.jpg')}}" style='width:30rem' alt="Super Ben-10">
+                <img src="{{asset('storage/image/capa.jpg')}}" style='width:30rem' alt="Super Ben-10">
             </div>
             <div class="col-6">
                 <p class="h3 text-center py-4">Quiz do Ben 10</p>

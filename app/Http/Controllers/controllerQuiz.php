@@ -9,8 +9,8 @@ class controllerQuiz extends Controller
     private $gabarito = array();
 
     public function __construct(){
-        $this->gabarito['ques1'] = 'D';
-        $this->gabarito['ques2'] = 'C';
+        $this->gabarito['quest1'] = 'D';
+        $this->gabarito['quest2'] = 'C';
         $this->gabarito['quest3'] = 'B';
         $this->gabarito['quest4'] = 'D';
         $this->gabarito['quest5'] = 'A';
@@ -19,7 +19,7 @@ class controllerQuiz extends Controller
         $this->gabarito['quest8'] = 'C';
     }
 
-    public function index(){
+    public function iniciar(){
         session(['acertos' => 0]);
         return view('quest1');
     }

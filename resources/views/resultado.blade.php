@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-    <div class="jumbotron">
+    <div class="py-5">
         <table class="table">
             <thead class="thead-dark">
                 <tr>

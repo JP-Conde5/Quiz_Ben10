@@ -22,8 +22,10 @@
             @endif
     </div>
     <div class="container-fluid">
-        <footer class="footer mt-auto py-3">
-            <span class="text-muted">Direitos reservados a ©copyright</span>
+        <footer class="footer mt-auto py-5">
+            <div class="container-fluid">
+                <span class="text-muted">Direitos reservados a ©copyright</span>
+            </div>
         </footer>
     </div>
 </nav>
